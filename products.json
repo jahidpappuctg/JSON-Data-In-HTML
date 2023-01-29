@@ -1,0 +1,16 @@
+[
+  {
+    "id": "id1",
+    "name": "HP EliteBook 840",
+    "image": "https://igg.dkkd.png",
+    "text": "hp new text",
+    "price": 320
+  },
+  {
+    "id": "id2",
+    "name": "HP EliteBook 800",
+    "image": "https://igg.dkkd.png",
+    "text": "hp new text",
+    "price": 420
+  }
+]

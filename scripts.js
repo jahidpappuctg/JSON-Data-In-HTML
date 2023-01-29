@@ -1,5 +1,9 @@
 
 const productdiv = document.getElementById("all-products");
+const cartProductsDiv = document.getElementById("cart-products");
+let products;
+let cartItem;
+
 
 fetch("products.json")
     .then(function (response) {
@@ -16,10 +20,14 @@ fetch("products.json")
                     <h5>${data[i].price}</h5>
                     <h3>${data[i].name}</h3>
                     <p>${data[i].text}</p>
-                    <button>add to cart</button>
+                    <button onClick = "addtoCart()">add to cart</button>
                 </div>
             </div>
                 
             `;
         }
+    })
+
+    .catch(function (error){
+        console.log(error);
     });
